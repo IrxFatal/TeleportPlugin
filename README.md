@@ -4,5 +4,7 @@ Version: **1.16.5**
 
 
 # Usage
+```
 /tp <x> <y> <z>
 permission: teleportplugin.tp
+```
