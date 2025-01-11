@@ -1,0 +1,13 @@
+name: TeleportPlugin
+version: '${project.version}'
+main: dev.irxfatal.teleportplugin.TeleportPlugin
+api-version: '1.16'
+authors: [IrxFatal]
+description: Deprecated
+website: irxfatal.dev
+
+commands:
+  tp:
+    description: Teleports a player with animation.
+    usage: /tp <x> <y> <z>
+    permission: teleportplugin.tp
