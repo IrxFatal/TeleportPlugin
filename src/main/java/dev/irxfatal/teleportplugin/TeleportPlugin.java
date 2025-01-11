@@ -54,11 +54,11 @@ public class TeleportPlugin extends JavaPlugin implements CommandExecutor {
 
             @Override
             public void run() {
-                if (ticks < 30) { // Faster animation
+                if (ticks < 30) { 
                     double radius = 1;
-                    double height = ticks * 0.1; // Faster vertical movement
+                    double height = ticks * 0.1; 
                     for (int i = 0; i < 10; i++) {
-                        double angle = i * (Math.PI / 5) + ticks * 0.2; // Faster rotation
+                        double angle = i * (Math.PI / 5) + ticks * 0.2; 
                         double xOffset = radius * Math.cos(angle);
                         double zOffset = radius * Math.sin(angle);
                         player.getWorld().spawnParticle(
@@ -72,7 +72,7 @@ public class TeleportPlugin extends JavaPlugin implements CommandExecutor {
                         );
                     }
 
-                    if (ticks % 10 == 0) { // More frequent sound
+                    if (ticks % 10 == 0) { 
                         player.playSound(player.getLocation(), Sound.BLOCK_PORTAL_AMBIENT, 1.0f, 1.0f);
                     }
 
@@ -87,11 +87,11 @@ public class TeleportPlugin extends JavaPlugin implements CommandExecutor {
 
                         @Override
                         public void run() {
-                            if (fallTicks < 30) { // Faster animation
+                            if (fallTicks < 30) { 
                                 double radius = 1;
-                                double height = 3 - (fallTicks * 0.1); // Faster vertical movement
+                                double height = 3 - (fallTicks * 0.1); 
                                 for (int i = 0; i < 10; i++) {
-                                    double angle = i * (Math.PI / 5) + fallTicks * 0.2; // Faster rotation
+                                    double angle = i * (Math.PI / 5) + fallTicks * 0.2; 
                                     double xOffset = radius * Math.cos(angle);
                                     double zOffset = radius * Math.sin(angle);
                                     targetLocation.getWorld().spawnParticle(
